@@ -1,0 +1,396 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="faa825d8-ff04-4d2f-b5bc-3fd19fe36ca4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Resource SCD</ID>
+  <Name>Resources</Name>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3036" scrolltop="3596" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11668" y="15584" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_resource_SCD" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="5556" height="15954" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000b4150000523e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_dim_resource_SCD" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3036</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>3596</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="169">
+            <Shape Id="Resource SCDID" Expanded="true">
+              <Attributes>
+                <Attribute Id="Resource SCDID" />
+                <Attribute Id="Employee Type Text SCC" />
+                <Attribute Id="RBS Text SCC" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Resource UID" Expanded="true">
+              <Attributes>
+                <Attribute Id="Resource UID" />
+                <Attribute Id="GROUP1" />
+                <Attribute Id="Resource Email Address" />
+                <Attribute Id="Resource Is Active" />
+              </Attributes>
+              <Position x="236" y="20" />
+            </Shape>
+            <Shape Id="Timesheet Mgr Text" Expanded="false">
+              <Attributes>
+                <Attribute Id="Timesheet Mgr Text" />
+              </Attributes>
+              <Position x="452" y="20" />
+            </Shape>
+            <Shape Id="Employee Type Text" Expanded="false">
+              <Attributes>
+                <Attribute Id="Employee Type Text" />
+              </Attributes>
+              <Position x="452" y="68" />
+            </Shape>
+            <Shape Id="Department Number" Expanded="false">
+              <Attributes>
+                <Attribute Id="Department Number" />
+              </Attributes>
+              <Position x="452" y="116" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="852f8b25-b1d1-43c3-858b-77a50335c399">
+    <DataSourceViewID>Per View Data Mart</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="d2871876-13cd-4bd5-bd21-f8d3a1f691cc">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="012ab167-3821-4d33-aaad-fd4adba7dd55">
+      <ID>Resource SCDID</ID>
+      <Name>Resource SCDID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6a78b67e-ab65-425e-94fe-fcbc74312660">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ecd5b23e-b119-44e1-8c89-9de837ea8755">
+            <TableID>dbo_dim_resource_SCD</TableID>
+            <ColumnID>ResourceSCDID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="75631471-ef06-4c8c-a069-238143922425">
+          <AttributeID>Resource UID</AttributeID>
+          <Name>Resource UID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="39b8c61c-5a9d-432d-92b7-47ef5ef74cdb">
+          <AttributeID>Employee Type Text SCC</AttributeID>
+          <Name>Employee Type Text SCC</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="39e0834d-e8d2-44d4-8429-7952b47c3a28">
+          <AttributeID>RBS Text SCC</AttributeID>
+          <Name>RBS Text SCC</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="698d2c78-b00d-4a11-96a0-536418423cf4">
+      <ID>Department Number</ID>
+      <Name>Department Number</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2a7f075a-a549-4b6a-9a9a-3c472ec6c006">
+          <DataType>WChar</DataType>
+          <DataSize>1024</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e9d22165-5b24-40ff-bbfc-537c3af351ae">
+            <TableID>dbo_dim_resource_SCD</TableID>
+            <ColumnID>Department_x0020_Number</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="63410682-d054-429e-a8c8-180c6da45532">
+      <ID>Resource Email Address</ID>
+      <Name>Resource Email Address</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1394b8fd-b539-4174-a2c2-6ffb0044a17e">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6709943c-87b2-435a-be0b-3c5814d62d13">
+            <TableID>dbo_dim_resource_SCD</TableID>
+            <ColumnID>ResourceEmailAddress</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fc6fdaa1-8d6b-41aa-b1a6-4b80eb2bde1b">
+      <ID>Resource Is Active</ID>
+      <Name>Resource Is Active</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8ebbc219-e06c-4997-87f2-263a30dc6d43">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bb3a119d-0edd-4e25-976f-513b44872b67">
+            <TableID>dbo_dim_resource_SCD</TableID>
+            <ColumnID>ResourceIsActive</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="02c303a9-dc0a-45f0-bac1-9602fe58389c">
+      <ID>GROUP1</ID>
+      <Name>GROUP1</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9252f5da-8688-4ce9-b367-1e16ad14d6e1">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2e3a8120-87f8-4760-8923-4c701d890249">
+            <TableID>dbo_dim_resource_SCD</TableID>
+            <ColumnID>GROUP1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2a4bf3ae-2c3e-47bc-8453-de7e5b8fd612">
+      <ID>Resource UID</ID>
+      <Name>Resource UID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="12b1332e-dd39-46b8-bb0e-4617e4f8073f">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7e7187f1-55a5-40ff-80a9-ea98eb036950">
+            <TableID>dbo_dim_resource_SCD</TableID>
+            <ColumnID>ResourceUID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="452a9c1d-27d7-420a-926f-7067a147ea57">
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="240b90aa-8c20-4816-bbe7-80197671752a">
+          <TableID>dbo_dim_resource_SCD</TableID>
+          <ColumnID>ResourceName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="814fdb8b-5d82-4525-a7cf-99d976134b11">
+          <AttributeID>GROUP1</AttributeID>
+          <Name>GROUP1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d7fd0c35-da4b-4a79-ae42-82b877ef4848">
+          <AttributeID>Resource Email Address</AttributeID>
+          <Name>Resource Email Address</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="20fba1f1-a073-4bae-8e65-9fb5e389d7cf">
+          <AttributeID>Resource Is Active</AttributeID>
+          <Name>Resource Is Active</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b74380bb-39b3-4949-9670-325c5e021ece">
+          <AttributeID>Department Number</AttributeID>
+          <Name>Department Number</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b04704bd-689c-4223-b4d9-8cbd7d639238">
+          <AttributeID>Employee Type Text</AttributeID>
+          <Name>Employee Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c9fdd382-5a35-4a37-a318-32c5afc0381c">
+          <AttributeID>Timesheet Mgr Text</AttributeID>
+          <Name>Timesheet Mgr Text</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6920c0fc-0da9-4895-a5f6-8fea0651af29">
+      <ID>Employee Type Text SCC</ID>
+      <Name>Employee Type Text SCC</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0fc6a4cf-6d61-4d72-aead-8b40c7e05d05">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e24910cb-1d0b-4c1f-94c0-16b0d4f7b14e">
+            <TableID>dbo_dim_resource_SCD</TableID>
+            <ColumnID>Employee_x0020_Type_x0020_Text_x0020_SCC</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ed5abc08-737d-45a5-a635-15455dabfadc">
+      <ID>RBS Text SCC</ID>
+      <Name>RBS Text SCC</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bac4e78a-b085-43f9-8256-a5c7613f9fbd">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8a57243e-1b69-449d-bda5-e438e0deb36d">
+            <TableID>dbo_dim_resource_SCD</TableID>
+            <ColumnID>RBS_Text_x0020_SCC</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="421d63ba-db68-4480-abb6-4cca5a1b526a">
+      <ID>Employee Type Text</ID>
+      <Name>Employee Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6347b27f-d7bf-4d86-93ac-7e92a0b7715a">
+          <DataType>WChar</DataType>
+          <DataSize>1024</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f7866f33-7668-45ec-8207-e1f61cf09565">
+            <TableID>dbo_dim_resource_SCD</TableID>
+            <ColumnID>Employee_Type_Text</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9d47df5f-75d7-4e4f-9e55-d823f996583b">
+      <ID>Timesheet Mgr Text</ID>
+      <Name>Timesheet Mgr Text</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1ad368e4-d272-4a56-8fe9-054c3c2ce3fa">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fbfb43b3-c57b-46d4-80c6-beeedd33b990">
+            <TableID>dbo_dim_resource_SCD</TableID>
+            <ColumnID>Timesheet_Mgr_Text</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="a44570f7-7407-4ecc-bcee-be26e4c13494">
+      <ID>Hierarchy</ID>
+      <Name>Resource List</Name>
+      <Levels>
+        <Level dwd:design-time-name="d34cd4b7-531d-4aff-964d-84c49a4c9e42">
+          <ID>Resource UID</ID>
+          <Name>Resource UID</Name>
+          <SourceAttributeID>Resource UID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="502f93d9-bfd2-400b-93b5-3725788fd0b7">
+      <ID>Hierarchy 1</ID>
+      <Name>By Department</Name>
+      <Levels>
+        <Level dwd:design-time-name="3cfafdf8-41be-43e5-9058-3a5379e3e4ae">
+          <ID>Department Number</ID>
+          <Name>Department Number</Name>
+          <SourceAttributeID>Department Number</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="d7a0ca5f-d16b-4248-b215-fdb74d806546">
+          <ID>Resource UID</ID>
+          <Name>Resource UID</Name>
+          <SourceAttributeID>Resource UID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="28d8eb2e-7377-4ed2-a737-1c57efef194a">
+      <ID>Hierarchy 2</ID>
+      <Name>By Employee Type</Name>
+      <Levels>
+        <Level dwd:design-time-name="e80fa363-9980-4586-9ebb-e63ffc939bdc">
+          <ID>Employee Type</ID>
+          <Name>Employee Type</Name>
+          <SourceAttributeID>Employee Type Text</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="0fd4275a-77b4-4ff9-b2cd-734cb87f52ca">
+          <ID>Resource UID</ID>
+          <Name>Resource UID</Name>
+          <SourceAttributeID>Resource UID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="4573455f-f6a4-4b72-82d2-bd84ccafd95b">
+      <ID>Hierarchy 3</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="dc1909b5-e44c-4ef5-81bb-537c6e61b814">
+          <ID>Timesheet Mgr Text</ID>
+          <Name>By Timesheet Mgr</Name>
+          <SourceAttributeID>Timesheet Mgr Text</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="095154ab-a699-4409-a7b9-63fd42ff12c8">
+          <ID>Resource UID</ID>
+          <Name>Resource UID</Name>
+          <SourceAttributeID>Resource UID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

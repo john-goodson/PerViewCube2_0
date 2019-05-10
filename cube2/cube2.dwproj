@@ -6,10 +6,99 @@
     <Name>cube2.database</Name>
     <FullPath>cube2.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Cube1.cube</Name>
+      <FullPath>Cube1.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Cube1.partitions</Name>
+          <FullPath>Cube1.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Timesheet Lines.dim</Name>
+      <FullPath>Timesheet Lines.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Timesheets.dim</Name>
+      <FullPath>Timesheets.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Resources.dim</Name>
+      <FullPath>Resources.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Projects.dim</Name>
+      <FullPath>Projects.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Time.dim</Name>
+      <FullPath>Time.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Snapshot.dim</Name>
+      <FullPath>Snapshot.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Project Hierarchy.dim</Name>
+      <FullPath>Project Hierarchy.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tasks.dim</Name>
+      <FullPath>Tasks.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Issues.dim</Name>
+      <FullPath>Issues.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Risks.dim</Name>
+      <FullPath>Risks.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Action Items.dim</Name>
+      <FullPath>Action Items.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Decisions.dim</Name>
+      <FullPath>Decisions.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>Per View Data Mart.ds</Name>
+      <FullPath>Per View Data Mart.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Per View Data Mart.dsv</Name>
+      <FullPath>Per View Data Mart.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Per View Data Mart</Id>
+            <Name>Per View Data Mart</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=xrdcwpdbsmsp03;Integrated Security=SSPI;Initial Catalog=PerViewDataMart</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Per View Data Mart</Id>
+            <Name>Per View Data Mart</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>

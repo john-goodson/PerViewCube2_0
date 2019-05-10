@@ -1,0 +1,1095 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e5c0de36-ca11-46dc-9d54-e53215b68126" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Tasks</ID>
+  <Name>Tasks</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3380" scrolltop="-7475" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11986" y="19950" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Task" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="5186" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c00004214000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Task" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3380</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-7475</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="599aca51-ff96-4964-bbeb-84d7156ddb4d">
+    <DataSourceViewID>Per View Data Mart</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="223c70bb-09b5-4b4d-9568-d947944ccd47">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="3a81b877-82ef-4131-8e54-2b26107ec3f9">
+      <ID>Task UID</ID>
+      <Name>Task UID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6cac6e1e-0199-4745-9092-108c7f51fe76">
+          <DataType>WChar</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2f02c805-16c6-424a-b2de-285ed9968aa6">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskUID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="d41ee627-df15-435c-830a-2fc721ad6e5e">
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7ccf8391-9e07-4dc9-b916-bd96976e7a97">
+          <TableID>dbo_Dim_Task</TableID>
+          <ColumnID>TaskName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="9da3ca0c-c614-4335-a612-0ad057a8e103">
+          <AttributeID>Task Parent UID</AttributeID>
+          <Name>Task Parent</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="282113a5-4ce2-4d36-bbb5-5bf5e921a290">
+          <AttributeID>Task Index</AttributeID>
+          <Name>Task Index</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b73f6608-d168-4abe-b5b5-93878a83510a">
+          <AttributeID>Task Is Milestone</AttributeID>
+          <Name>Task Is Milestone</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ed341920-c25a-4145-a876-e1d3dd7e6c68">
+          <AttributeID>Task Is Critical</AttributeID>
+          <Name>Task Is Critical</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5e8aabeb-b1f8-4d16-8f33-626eec2b7eaa">
+          <AttributeID>Task Is Summary</AttributeID>
+          <Name>Task Is Summary</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4dd0cfb8-9ca0-4d6c-a7c2-e34b20e2d1c1">
+          <AttributeID>Task Duration Variance</AttributeID>
+          <Name>Task Duration Variance</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5f96ad96-1ed1-40ef-9a9c-fe4e3642d451">
+          <AttributeID>Task Start Variance</AttributeID>
+          <Name>Task Start Variance</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="988816bd-863f-4c63-848b-5d376248efc8">
+          <AttributeID>Task Finish Variance</AttributeID>
+          <Name>Task Finish Variance</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f07cade2-4f7a-437a-8ac8-3813bc9dc0b3">
+          <AttributeID>Task Duration</AttributeID>
+          <Name>Task Duration</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="aed1c31e-09fd-45de-b70f-97eda0917203">
+          <AttributeID>Task Start Date</AttributeID>
+          <Name>Task Start Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="461e074e-dc1b-44f7-9cd0-32560d8f5d1c">
+          <AttributeID>Task Finish Date</AttributeID>
+          <Name>Task Finish Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8976d666-6f57-4872-98d2-391476e3676b">
+          <AttributeID>Task Percent Completed</AttributeID>
+          <Name>Task Percent Completed</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0d268a15-9359-4525-a2ff-6b5acc7abbdb">
+          <AttributeID>Task Percent Work Completed</AttributeID>
+          <Name>Task Percent Work Completed</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b88b0368-504d-41ec-be59-0b8537f57ea4">
+          <AttributeID>Task Is Active</AttributeID>
+          <Name>Task Is Active</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6c9bdcad-2122-4554-9d9e-ac370ce4f7fb">
+          <AttributeID>Task Created Date</AttributeID>
+          <Name>Task Created Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f8cfa08d-1067-4be5-9e39-42e55fd4389f">
+          <AttributeID>Task Modified Date</AttributeID>
+          <Name>Task Modified Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3d5109c9-485d-493b-bf15-b8206a95688f">
+          <AttributeID>Task Physical Percent Completed</AttributeID>
+          <Name>Task Physical Percent Completed</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="731feae7-6504-40ce-bbfc-793a8ac786a5">
+          <AttributeID>Task Baseline0 Start Date</AttributeID>
+          <Name>Task Baseline0 Start Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fe5162fb-e3a8-4668-876c-96fc61a4e1dd">
+          <AttributeID>Task Baseline0 Finish Date</AttributeID>
+          <Name>Task Baseline0 Finish Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5f51fcf1-0363-4929-b2cd-122ed256d106">
+          <AttributeID>Task Outline Number</AttributeID>
+          <Name>Task Outline Number</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ad135a6b-62db-4a10-a0f0-107f6a6ae8c4">
+          <AttributeID>Report Key Text</AttributeID>
+          <Name>Report Key Text</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1fc08fd6-57d5-4ccf-a652-9ab091cdef7a">
+          <AttributeID>Report Grouping Text</AttributeID>
+          <Name>Report Grouping Text</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bb5c1d1c-33c9-4230-adaa-3da67b7ca3be">
+          <AttributeID>Task Comments</AttributeID>
+          <Name>Task Comments</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2b47b485-3e7d-441f-80df-c48ef6469640">
+          <AttributeID>Task Actual Finish Date</AttributeID>
+          <Name>Task Actual Finish Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a1b0f752-ded9-489e-a64b-a7625234dffe">
+          <AttributeID>WBS</AttributeID>
+          <Name>WBS</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b0d6b09f-dc17-4af5-acff-773130e0254d">
+          <AttributeID>Task Actual Start Date</AttributeID>
+          <Name>Task Actual Start Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="717e525d-038e-4f83-8345-13862f78ab61">
+          <AttributeID>Task Baseline0 Duration</AttributeID>
+          <Name>Task Baseline0 Duration</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fc516b1c-67f9-4f8f-b584-02aa16cdccb3">
+          <AttributeID>Key Task</AttributeID>
+          <Name>Key Task</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="763ba9e2-4109-4b03-bfd4-457537de4958">
+          <AttributeID>Deliverable Flag</AttributeID>
+          <Name>Deliverable Flag</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9d2c9b6d-42ea-4b31-9f31-d87fe315d11a">
+          <AttributeID>Task Deliverable Start Date</AttributeID>
+          <Name>Task Deliverable Start Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d5ef2e92-9edf-4aba-8ec2-b96923d6ea80">
+          <AttributeID>Task Deliverable Finish Date</AttributeID>
+          <Name>Task Deliverable Finish Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e1c9e314-f5d1-4ec6-a7fe-74fdb08dc489">
+          <AttributeID>Milestone Flag</AttributeID>
+          <Name>Milestone Flag</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8aada0e3-3a36-40ee-8301-ff5828077702">
+          <AttributeID>Actual Finish Date Range</AttributeID>
+          <Name>Actual Finish Date Range</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5d988a99-b592-4e8c-9b5e-f9f9ac77beb0">
+          <AttributeID>Responsible Party</AttributeID>
+          <Name>Responsible Party</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f40aed9f-ea79-4b4d-aab0-1df8dcbdfd05">
+          <AttributeID>Forecast To Finish</AttributeID>
+          <Name>Forecast To Finish</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="eaf83ae4-a36d-4af7-a18c-4ab342d9c66a">
+          <AttributeID>Forecast To Start</AttributeID>
+          <Name>Forecast To Start</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="37a51138-e9d4-4ee7-a879-4bcfcfc62532">
+          <AttributeID>Baselined To Finish</AttributeID>
+          <Name>Baselined To Finish</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="35954658-acc4-4bfd-a7ee-28f6a7cd52c6">
+          <AttributeID>Baselined To Start</AttributeID>
+          <Name>Baselined To Start</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8fb76b5b-b396-4ad7-bbb7-5ec49a298629">
+          <AttributeID>IS Scheduled Milestone</AttributeID>
+          <Name>IS Scheduled Milestone</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8117b73f-b6d5-4f2a-9477-1c8ed32236de">
+          <AttributeID>IS Completed Milestone</AttributeID>
+          <Name>IS Completed Milestone</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e5071b5d-7056-4431-9759-7ecbfb040ee8">
+          <AttributeID>IS Scheduled Deliverable</AttributeID>
+          <Name>IS Scheduled Deliverable</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="61faa210-72e0-4d09-8fac-c9fd4c3b550e">
+          <AttributeID>IS Completed Deliverable</AttributeID>
+          <Name>IS Completed Deliverable</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="65cf801a-3059-49b0-819f-1392bc66fd1e">
+          <AttributeID>IS Incompleted Task</AttributeID>
+          <Name>IS Incompleted Task</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3cf4785a-1b9f-452b-accd-f9abfa2b503e">
+          <AttributeID>IS Baselined To Finish</AttributeID>
+          <Name>IS Baselined To Finish</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="98094710-15d7-44f5-af8f-466370d12d20">
+          <AttributeID>FDI Facility</AttributeID>
+          <Name>FDI Facility</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9ef0f2d1-ab7e-4fd6-b23f-9c5c15e406f7">
+          <AttributeID>FDI Go Live</AttributeID>
+          <Name>FDI Go Live</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e0508f70-1d32-4959-86a1-1ab73ec86b4d">
+          <AttributeID>Task Is Baselined And Complete</AttributeID>
+          <Name>Task Is Baselined And Complete</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="88259a27-bd40-4c76-9756-bd189a43314e">
+          <AttributeID>Project UID</AttributeID>
+          <Name>Project UID</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cc495455-a229-42d6-94a1-14a510326a2a">
+      <ID>Task Parent UID</ID>
+      <Name>Task Parent</Name>
+      <Usage>Parent</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="41f21c9f-5e57-4ee4-9834-9344defb8a7b">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="072354ca-f307-40c9-89c0-648616eb0f4c">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskParentUID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="d1e8ec6b-786a-408c-adeb-681eabf27ddc">
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b507aaf8-7b78-42bc-aab5-d26c5e941060">
+          <TableID>dbo_Dim_Task</TableID>
+          <ColumnID>TaskName</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="974938f3-2207-4b25-af4a-e31d8d2326fb">
+      <ID>Task Index</ID>
+      <Name>Task Index</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="42e48e7c-29c8-4e75-b93d-25b34a552d29">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8544badd-97ad-4b6f-ab17-795ac7b6b42b">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskIndex</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8e375264-1f49-4277-b2a6-305527c8e1b1">
+      <ID>Task Is Milestone</ID>
+      <Name>Task Is Milestone</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3c5b3224-e5e4-4119-9ea5-a6c4cc8136ed">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4e06a418-3c5a-41f5-a358-6d4a9cf9d65b">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskIsMilestone</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5709ba32-ca3e-4544-8644-90fd1f713ab4">
+      <ID>Task Is Critical</ID>
+      <Name>Task Is Critical</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ce50da0f-125f-4d33-b0ec-700e04d55a9d">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="81bdf079-baf7-45af-b29d-053fa5d1a7e9">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskIsCritical</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="79c73df2-2e99-4920-ad3d-0789c1028cc1">
+      <ID>Task Is Summary</ID>
+      <Name>Task Is Summary</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e68fceed-4613-42f3-85c4-fd4189e8f638">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e56af27d-75db-4966-a99c-775b70bf9f96">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskIsSummary</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="644a6b8e-e2a7-48c8-bb83-9251626bcb68">
+      <ID>Task Duration Variance</ID>
+      <Name>Task Duration Variance</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="40bc3912-af4f-484c-ba2e-c87e9aa4a003">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="74e2a4f9-b17a-4359-94b6-59c4f60dcf71">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskDurationVariance</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="12f47f00-52f9-4964-87f8-3b3abd8d4f3e">
+      <ID>Task Start Variance</ID>
+      <Name>Task Start Variance</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="de404c2c-9d4a-4180-b566-2e00570c3ae8">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b5280c05-da17-4df1-bbd3-cad3b07fae77">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskStartVariance</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="34fa1ce5-13cd-4925-b755-5bc2465e792a">
+      <ID>Task Finish Variance</ID>
+      <Name>Task Finish Variance</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4a0b5522-6e38-4b75-8d46-f2a2f099bed6">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="66669ee3-172e-4a40-9a4c-e3aff207ae44">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskFinishVariance</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="105372a7-4d0b-4537-811e-d57cc90044e5">
+      <ID>Task Duration</ID>
+      <Name>Task Duration</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e1a4537d-afc6-42e1-af90-3e741f2fa332">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="54f44014-68ca-4218-9c84-ec3ddceb35e6">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskDuration</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="da311a85-c957-4a83-b3eb-3aacd6417077">
+      <ID>Task Start Date</ID>
+      <Name>Task Start Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="41309ad3-4342-4bfa-a5cf-6f4c24cb9f68">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c036981d-adc6-40a9-bba3-99096fc48531">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskStartDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3a8c8836-baee-474f-b117-4b4ea17135b5">
+      <ID>Task Finish Date</ID>
+      <Name>Task Finish Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="37a0e14c-50bd-40dd-a8b9-4c4148ab0619">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="37feeb2a-71d9-42bd-9c32-9e1db537a08a">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskFinishDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a3aa5e59-145e-480d-af2d-3f2ad533f6f9">
+      <ID>Task Percent Completed</ID>
+      <Name>Task Percent Completed</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="35a47036-8095-4793-91e1-98045c53a60d">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="168a233b-b9d5-4642-936d-acb224d5b9bf">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskPercentCompleted</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e711c52d-2acd-413e-a2ab-76c9e30c609d">
+      <ID>Task Percent Work Completed</ID>
+      <Name>Task Percent Work Completed</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e8c181ae-6049-432f-8bc0-88d69dc3dc1a">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b6d903b4-2ac7-4d37-b5f5-36b99b975895">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskPercentWorkCompleted</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fde1ab9d-d877-463d-801f-20fe6b8b4c69">
+      <ID>Task Is Active</ID>
+      <Name>Task Is Active</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="85233d39-e99d-453a-87d1-4441d9ae24c7">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f13a1854-44f5-494c-a193-ae34deab9282">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskIsActive</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5dab0909-c412-4768-8e1f-5aeaaf562fd1">
+      <ID>Task Created Date</ID>
+      <Name>Task Created Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="762adf55-66da-4109-907c-0487787c2e1f">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d988bd3e-994e-4458-bb2c-2ea327b87bea">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskCreatedDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="270052b3-ce7e-4d28-b763-1fdc50beb3d7">
+      <ID>Task Modified Date</ID>
+      <Name>Task Modified Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d9245185-7418-4271-86ad-9b709c3f1d16">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6d910a8e-3f2f-4fc7-b747-42730915a41e">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskModifiedDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fcc45f9c-71d6-4dfd-be72-890e28d4ac32">
+      <ID>Task Physical Percent Completed</ID>
+      <Name>Task Physical Percent Completed</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8e4c99d6-704b-494d-85ca-5d026feda657">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="81a5632a-e96d-43b8-8157-4cacd3e5cb35">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskPhysicalPercentCompleted</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="76694786-9120-4979-a1d7-612c8ff872fa">
+      <ID>Task Baseline0 Start Date</ID>
+      <Name>Task Baseline0 Start Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a28998ec-a7a8-42fc-a115-4d3357adfdcb">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="814ae189-b1c9-49ec-8032-8b848b217d69">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskBaseline0StartDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0aff1ff8-0203-45d9-8a15-f20d07cda584">
+      <ID>Task Baseline0 Finish Date</ID>
+      <Name>Task Baseline0 Finish Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a359de7c-3d25-4393-bda1-12dfb610e9b0">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6d6a4d58-86d1-4ab6-bba8-926f9b8b1a55">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskBaseline0FinishDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="84f1ccfa-c77d-47b9-b734-88c71c95abe5">
+      <ID>Task Outline Number</ID>
+      <Name>Task Outline Number</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="67827d0e-aeb4-4ff8-adf8-3ff2c366f6a3">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9488a116-4102-4ec7-b25a-d6921229f3ae">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskOutlineNumber</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ce21e041-d57f-4fd2-8671-44fc2fda5738">
+      <ID>Report Key Text</ID>
+      <Name>Report Key Text</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7747fb23-28ff-46b2-9fc3-6ba4f6d95750">
+          <DataType>WChar</DataType>
+          <DataSize>1024</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ae36622e-4cc0-44a3-b3cd-d83eb3e30a11">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>Report_Key_text</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="148c4600-521c-4eea-8cf7-6b2e366a0766">
+      <ID>Report Grouping Text</ID>
+      <Name>Report Grouping Text</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f44c58ae-3860-4a3c-86c5-6ceb1561072d">
+          <DataType>WChar</DataType>
+          <DataSize>1024</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ec3b54c3-c67c-488f-a928-ef2f4e9bda52">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>Report_Grouping_Text</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="aa187d84-ef18-4b58-bf42-621df891fdeb">
+      <ID>Task Comments</ID>
+      <Name>Task Comments</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="017852f1-26f6-4408-9eea-bb3557c495d9">
+          <DataType>WChar</DataType>
+          <DataSize>1024</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ed91cd12-7133-4357-953e-2ea3de4967dc">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>Task_x0020_Comments</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d0f7f4b5-5f22-4d38-848b-9497ca699f02">
+      <ID>Task Actual Finish Date</ID>
+      <Name>Task Actual Finish Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fd466a5a-ee29-42ad-b035-4118000562cb">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fef4020b-10cf-4576-a901-df8c1a32e6f1">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskActualFinishDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d242ced9-3083-40fd-b100-4c589cbb7ee7">
+      <ID>WBS</ID>
+      <Name>WBS</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1ca2ee35-9e49-498c-ac3a-da2c20e0ed42">
+          <DataType>WChar</DataType>
+          <DataSize>55</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cddcf91b-93a8-406b-b832-451c3d8bd8ef">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>WBS</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6b09cfdc-2950-45f1-ac19-c50390c857a0">
+      <ID>Task Actual Start Date</ID>
+      <Name>Task Actual Start Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="185e1d67-22bc-48f6-8a31-b886d86ca17e">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="acafc6be-c203-4f9d-9eab-dcb013c539f4">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskActualStartDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b917b560-49d1-4124-bce6-92372365ccf1">
+      <ID>Task Baseline0 Duration</ID>
+      <Name>Task Baseline0 Duration</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ead2acd1-a7fd-49cf-ad39-d7a653375cd7">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f57e8eab-6054-4080-b57d-c30380e63c98">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskBaseline0Duration</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bbcd7ab3-a7fb-4b6e-ad7b-9b5b51eedebe">
+      <ID>Key Task</ID>
+      <Name>Key Task</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="754b5621-1772-4a66-8212-1554bab23651">
+          <DataType>WChar</DataType>
+          <DataSize>1024</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0207323b-066c-416a-885a-a95fe41daadd">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>Key_x0020_Task</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9fbc0f9c-f131-47d2-8159-d2b0d72c7585">
+      <ID>Deliverable Flag</ID>
+      <Name>Deliverable Flag</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="de4ae9ba-26c6-44ff-9b2a-aae5dc5dd14c">
+          <DataType>WChar</DataType>
+          <DataSize>1024</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1b88dd12-f113-4d39-ab5b-17f380ee6e8a">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>Deliverable_x0020_Flag</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="00b61613-b277-4f7e-9de2-8a881016d2b2">
+      <ID>Task Deliverable Start Date</ID>
+      <Name>Task Deliverable Start Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="14ecae96-fcf2-4f55-af03-b99c360c2088">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="44d8e40e-7193-434d-b9f0-31e2dd48191f">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskDeliverableStartDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="36fbe3d0-af5f-42e7-ab23-afd5aac17286">
+      <ID>Task Deliverable Finish Date</ID>
+      <Name>Task Deliverable Finish Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f575dae1-3f46-42f3-80b8-a0f8e73e6d9c">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8a104034-a64d-48ae-997e-72d9da400fd6">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskDeliverableFinishDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7dc6fd28-a9d4-4da4-b389-3e4e6e0b4846">
+      <ID>Milestone Flag</ID>
+      <Name>Milestone Flag</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4c1136cf-ace7-4e61-9d4c-c62fc6f9ef62">
+          <DataType>WChar</DataType>
+          <DataSize>1024</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f54ba9b0-34d3-4229-9a04-254c168da8af">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>Milestone_x0020_Flag</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6233aab1-91c1-4745-b650-e0065dbb80c7">
+      <ID>Actual Finish Date Range</ID>
+      <Name>Actual Finish Date Range</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="238a09c1-ccb3-44b5-bb6d-54ffe72268d6">
+          <DataType>WChar</DataType>
+          <DataSize>24</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="40dbf9f5-dcfc-48e4-bcfe-f0dcdec9793b">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>ActualFinishDateRange</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0eea7db0-417c-473b-8e37-55954b089431">
+      <ID>Responsible Party</ID>
+      <Name>Responsible Party</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cf9556d5-13b5-40eb-8e22-334b3256c5b1">
+          <DataType>WChar</DataType>
+          <DataSize>1024</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cccd8968-8d3b-4ff2-a428-b7252e814bad">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>Responsible_x0020_Party</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e47c341b-0e22-4a61-b953-07e893654f88">
+      <ID>Forecast To Finish</ID>
+      <Name>Forecast To Finish</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dbf4b9e2-5c05-48cb-9b81-e13b3ddbe559">
+          <DataType>WChar</DataType>
+          <DataSize>28</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dc8f5f77-2f3e-4449-81b5-fd3b873217bc">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>ForecastToFinish</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="61b09365-6027-4c34-8fdf-c27ca0bb60e4">
+      <ID>Forecast To Start</ID>
+      <Name>Forecast To Start</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f44eb5bf-0600-48f0-94f6-7731623740f6">
+          <DataType>WChar</DataType>
+          <DataSize>27</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2aa5955a-0f47-49c0-822a-8283638a92fe">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>ForecastToStart</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="891ebfd6-aec5-4a39-a922-15daf24178f0">
+      <ID>Baselined To Finish</ID>
+      <Name>Baselined To Finish</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3e4237a5-9892-4d5c-a50b-0dec71a91d8f">
+          <DataType>WChar</DataType>
+          <DataSize>32</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3d5d6749-7fbb-4cef-8b55-3e752fbe1681">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>BaselinedToFinish</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3b9e9811-d9c2-49e1-97e2-c94a4ac59f23">
+      <ID>Baselined To Start</ID>
+      <Name>Baselined To Start</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a4170944-aa1f-4ddc-be7f-12a679374e9d">
+          <DataType>WChar</DataType>
+          <DataSize>31</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="89933307-98ad-48e9-bea3-cb2f22bc8418">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>BaselinedToStart</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5c0f7ee9-a61a-402f-935c-80af2c566d1a">
+      <ID>IS Scheduled Milestone</ID>
+      <Name>IS Scheduled Milestone</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="43b7572a-81dd-48e9-bb00-a50d5eb05b9c">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="605f7656-a92f-4c28-8d19-19828c95a880">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>ISScheduledMilestone</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a173cc5e-f023-4d1f-9207-7804a7d6159e">
+      <ID>IS Completed Milestone</ID>
+      <Name>IS Completed Milestone</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4c2d7615-00f4-40ad-b3dd-67d51c1cab44">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6d285184-173d-4b87-81b1-17d65ac8bf8d">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>ISCompletedMilestone</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c26b8d6d-6e2e-4f1f-b69f-949822194ed5">
+      <ID>IS Scheduled Deliverable</ID>
+      <Name>IS Scheduled Deliverable</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c847d317-b856-48a0-a992-100785945572">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="49a75a4c-38f7-4719-b515-2a4d33307b8e">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>ISScheduledDeliverable</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fb5dd12a-d52d-4a0d-ba22-fe71033eee8d">
+      <ID>IS Completed Deliverable</ID>
+      <Name>IS Completed Deliverable</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6c77ab88-b5d0-4bb0-9b6d-11bc78533eba">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f3017a20-c560-48fa-9eac-423376505b46">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>ISCompletedDeliverable</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="13d3abde-b794-49fe-9550-d6f5d115c356">
+      <ID>IS Incompleted Task</ID>
+      <Name>IS Incompleted Task</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fa84651b-8d44-49bf-bfa6-03daba923953">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0547330f-7a95-4822-b481-e6115778589d">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>ISIncompletedTask</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="92a29cf7-e44a-4e44-8c93-7044498419e9">
+      <ID>IS Baselined To Finish</ID>
+      <Name>IS Baselined To Finish</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="16c8e333-89ef-4249-8a1b-7b1fafdfd4e4">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fe6542d0-f46f-435a-a803-2ca3b095ca58">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>ISBaselinedToFinish</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2e7c8979-a60d-4b18-ac1c-8db21bdd8e22">
+      <ID>FDI Facility</ID>
+      <Name>FDI Facility</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bdd17693-4175-4dcc-95a4-f27414579433">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0391b983-8d64-4ed7-a016-6467708750d8">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>FDI_x0020_Facility</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e1c7ccd4-c951-413e-ae1d-df0cea164fcf">
+      <ID>FDI Go Live</ID>
+      <Name>FDI Go Live</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fa1a5f34-0a34-40a3-b060-db28d6304515">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="69834ccf-7938-4ade-af2c-f7d4e1ed4822">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>FDI_x0020_Go_x0020_Live</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d543a406-cba4-40f1-8049-97f96ef2836f">
+      <ID>Task Is Baselined And Complete</ID>
+      <Name>Task Is Baselined And Complete</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="72ce66cb-5d15-4338-beda-d5866b3f1748">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5e392050-3159-41dc-9fde-3fcb323944c1">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>TaskIsBaselinedAndComplete</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e85588e6-ee4e-42d3-8f42-74c3dd9b1e5a">
+      <ID>Project UID</ID>
+      <Name>Project UID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9a3807ee-51b5-4ebf-8f4c-5add7c42ec4b">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4488d5b9-c2b4-46f2-9b46-e151b8aa910e">
+            <TableID>dbo_Dim_Task</TableID>
+            <ColumnID>ProjectUID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

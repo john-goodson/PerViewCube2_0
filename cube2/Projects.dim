@@ -1,0 +1,496 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ed18fb32-c6a1-49ee-8873-85b6837d59cb" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Project SCD</ID>
+  <Name>Projects</Name>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2533" scrolltop="-3996" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11668" y="15584" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Project_SCD" left="20" top="-4234" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="6562" height="21352" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000a219000068530000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Project_SCD" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2533</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3996</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-4234</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="245">
+            <Shape Id="Project SCDID" Expanded="true">
+              <Attributes>
+                <Attribute Id="Project SCDID" />
+                <Attribute Id="LOB Text SCC" />
+                <Attribute Id="PM Health Text SCC" />
+                <Attribute Id="Project Chargeback Category Text SCC" />
+                <Attribute Id="Project Finish Date SCC" />
+                <Attribute Id="Project Name SCC" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Project UID" Expanded="true">
+              <Attributes>
+                <Attribute Id="Project UID" />
+                <Attribute Id="Checked Out By" />
+                <Attribute Id="Email The PM" />
+                <Attribute Id="Enterprise Project Type" />
+                <Attribute Id="Epm Platform" />
+                <Attribute Id="Parent Per View Project Name" />
+                <Attribute Id="Parent Project UID" />
+                <Attribute Id="Project Finish Date" />
+              </Attributes>
+              <Position x="331" y="20" />
+            </Shape>
+            <Shape Id="Project Owner Name" Expanded="false">
+              <Attributes>
+                <Attribute Id="Project Owner Name" />
+              </Attributes>
+              <Position x="642" y="20" />
+            </Shape>
+            <Shape Id="Project Chargeback Category" Expanded="false">
+              <Attributes>
+                <Attribute Id="Project Chargeback Category" />
+              </Attributes>
+              <Position x="642" y="68" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="c4790152-4b91-4c8b-9092-a41dffd21bf9">
+    <DataSourceViewID>Per View Data Mart</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="d306a533-0da0-4d3c-b5c4-4abce3ea65b4">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="33676469-314c-4dbe-93c7-9aa05a464541">
+      <ID>Project SCDID</ID>
+      <Name>Project SCDID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4ea22d7b-af7b-4657-a08d-f87cc719563f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="732ad16c-f701-4672-9429-325faaa8d756">
+            <TableID>dbo_Dim_Project_SCD</TableID>
+            <ColumnID>ProjectSCDID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="87f554f3-9d61-4279-9355-919828ccea37">
+          <AttributeID>Project UID</AttributeID>
+          <Name>Project UID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="898869ce-6d2c-4be3-ba69-5930cf04df12">
+          <AttributeID>Project Name SCC</AttributeID>
+          <Name>Project Name SCC</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cd9f93cb-cc2a-40b8-8275-1e47d7c92525">
+          <AttributeID>Project Finish Date SCC</AttributeID>
+          <Name>Project Finish Date SCC</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a6e18cb6-122d-48cc-ba7d-0e241f081b44">
+          <AttributeID>LOB Text SCC</AttributeID>
+          <Name>LOB Text SCC</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b7e20f71-1c7b-42a1-bb8d-7a9062a6ca50">
+          <AttributeID>Project Chargeback Category Text SCC</AttributeID>
+          <Name>Project Chargeback Category Text SCC</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ed489170-a6de-4aab-86ab-1878a979a11c">
+          <AttributeID>PM Health Text SCC</AttributeID>
+          <Name>PM Health Text SCC</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="725b5d54-8751-4df0-ad00-6c5656d7eece">
+      <ID>Project UID</ID>
+      <Name>Project UID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="978fe921-3734-4321-a7ad-2fea613690ea">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8dd4909a-9af7-45db-ba43-45c04b868b54">
+            <TableID>dbo_Dim_Project_SCD</TableID>
+            <ColumnID>ProjectUID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="593c8557-d604-45a9-b143-9e06419ff1a3">
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="aa1a1036-bfac-43cf-bdf2-a892d60eded9">
+          <TableID>dbo_Dim_Project_SCD</TableID>
+          <ColumnID>ProjectName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="2c9fd263-6582-479e-a05f-f151dd87bba4">
+          <AttributeID>Epm Platform</AttributeID>
+          <Name>Epm Platform</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1b042420-6397-4d19-9588-8f20d1b84af3">
+          <AttributeID>Checked Out By</AttributeID>
+          <Name>Checked Out By</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3b95cab7-48dc-44c6-8234-6a6490ea5bf1">
+          <AttributeID>Email The PM</AttributeID>
+          <Name>Email The PM</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a0951b93-1e79-46b7-a6ba-5af4777727c5">
+          <AttributeID>Enterprise Project Type</AttributeID>
+          <Name>Enterprise Project Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b234f43a-2e48-4d48-aac1-f614ff843be0">
+          <AttributeID>Parent Per View Project Name</AttributeID>
+          <Name>Parent Per View Project Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1bc886bc-2d5c-4535-8418-02472fab4888">
+          <AttributeID>Project Chargeback Category</AttributeID>
+          <Name>Project Chargeback Category</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6e29ca9a-0c83-4749-a26f-6c8486db7052">
+          <AttributeID>Project Finish Date</AttributeID>
+          <Name>Project Finish Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b874cdc3-619a-4c4c-894e-5dd65002b4f4">
+          <AttributeID>Parent Project UID</AttributeID>
+          <Name>Parent Project UID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a12f306c-7d3a-443f-952e-4dae4a7be072">
+          <AttributeID>Project Owner Name</AttributeID>
+          <Name>Project Owner Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="777fda9e-d70f-4b88-9d59-9a5e02c2760c">
+      <ID>Project Name SCC</ID>
+      <Name>Project Name SCC</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="01837ecb-040d-47f6-b2c9-bcca27a4cf88">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0657a81b-b482-41c7-a330-ab5e635edaa7">
+            <TableID>dbo_Dim_Project_SCD</TableID>
+            <ColumnID>ProjectName_x0020_SCC</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d49287c0-65a5-4f47-8b07-f69d8dad8a39">
+      <ID>Project Finish Date SCC</ID>
+      <Name>Project Finish Date SCC</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="31d275ae-0dde-4d62-b436-7a11e6bbaa7e">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="de04a821-5414-4071-927a-2282ecb18388">
+            <TableID>dbo_Dim_Project_SCD</TableID>
+            <ColumnID>ProjectFinishDate_x0020_SCC</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5f7200c2-a903-4fff-87ec-9fcded09cee3">
+      <ID>LOB Text SCC</ID>
+      <Name>LOB Text SCC</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="701c4b3c-f63e-4e0a-9517-f390936af1ea">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ee6dc356-4e94-43f6-b04d-4620184d77ad">
+            <TableID>dbo_Dim_Project_SCD</TableID>
+            <ColumnID>LOB_x0020_Text_x0020_SCC</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d61a0548-f745-42b5-b3b7-a547ac66dcdf">
+      <ID>Project Chargeback Category Text SCC</ID>
+      <Name>Project Chargeback Category Text SCC</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="39c7a528-6e1e-423c-bb3f-89c4dbdbe2ab">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="304d3923-f7ae-425e-97ba-edf179ee5566">
+            <TableID>dbo_Dim_Project_SCD</TableID>
+            <ColumnID>Project_Chargeback_Category_Text_x0020_SCC</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d2463d46-da00-4329-b382-277d74839bef">
+      <ID>PM Health Text SCC</ID>
+      <Name>PM Health Text SCC</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="04ee3c5d-094e-4ccf-9287-38bade98e227">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ec791da9-774c-4633-aec7-6c1bb45c58d0">
+            <TableID>dbo_Dim_Project_SCD</TableID>
+            <ColumnID>PMHealth_Text_x0020_SCC</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3c7e3cad-2783-40be-bd16-827a665af54f">
+      <ID>Epm Platform</ID>
+      <Name>Epm Platform</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9b549232-eee1-440a-973c-918fd84467a3">
+          <DataType>WChar</DataType>
+          <DataSize>12</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f0fa5a73-60aa-4330-b008-8d1de61b7ede">
+            <TableID>dbo_Dim_Project_SCD</TableID>
+            <ColumnID>epm_platform</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="340b82b4-2fd4-4595-9706-e13c0df2cab3">
+      <ID>Email The PM</ID>
+      <Name>Email The PM</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f22735d9-a1b4-4f28-bf66-1f5fe9a9b487">
+          <DataType>WChar</DataType>
+          <DataSize>579</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="41d89c64-be9c-44aa-963c-024fc2d90827">
+            <TableID>dbo_Dim_Project_SCD</TableID>
+            <ColumnID>emailThePM</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1b748ff9-b186-4490-b309-bca1884fed82">
+      <ID>Parent Per View Project Name</ID>
+      <Name>Parent Per View Project Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d03d4703-91b7-4729-8777-9257d1c51ab1">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3ad3d542-0a32-47c6-ac1f-8595d1db5bd7">
+            <TableID>dbo_Dim_Project_SCD</TableID>
+            <ColumnID>ParentPerViewProjectName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1659bace-37e5-4463-869e-5da8378e9281">
+      <ID>Enterprise Project Type</ID>
+      <Name>Enterprise Project Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fb0d2a81-6358-448a-bd43-ec6f9e37fa2d">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6a1216c2-1394-4f36-8aab-66adbb4047c0">
+            <TableID>dbo_Dim_Project_SCD</TableID>
+            <ColumnID>Enterprise_x0020_Project_x0020_Type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f7e5a3d2-8f01-4ba5-a825-deb92698ada9">
+      <ID>Checked Out By</ID>
+      <Name>Checked Out By</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b314f2b8-3b30-4200-bd5e-5428bcf393b2">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d2491434-b165-45bf-bb9f-0416681159f7">
+            <TableID>dbo_Dim_Project_SCD</TableID>
+            <ColumnID>CheckedOutBy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c5f64a60-310d-41e4-a4a9-3c823b533f34">
+      <ID>Project Finish Date</ID>
+      <Name>Project Finish Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a4d7a996-01ea-4459-bf33-a180c56b0bc9">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="65cf99d5-5a0b-4f4f-8b52-3be60bb591b0">
+            <TableID>dbo_Dim_Project_SCD</TableID>
+            <ColumnID>ProjectFinishDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5a44ace0-fa9a-4ef6-bcae-d2b6926bf15c">
+      <ID>Parent Project UID</ID>
+      <Name>Parent Project UID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a79d6882-859c-41c8-a69f-06ca548cfde0">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0e2ae1db-1a08-4d95-8155-c40a488e6d9e">
+            <TableID>dbo_Dim_Project_SCD</TableID>
+            <ColumnID>ParentProjectUID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ca8c068a-b501-48ef-92da-486c9cbfe247">
+      <ID>Project Chargeback Category</ID>
+      <Name>Project Chargeback Category</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1e94e7db-02d1-4d93-8dd0-e863f9232d14">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="274ff072-bc92-462d-a0f4-1e12ae6e645d">
+            <TableID>dbo_Dim_Project_SCD</TableID>
+            <ColumnID>Project_x0020_Chargeback_x0020_Category</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="60fff4b3-1a64-4a37-8079-8ddf31f2d793">
+      <ID>Project Owner Name</ID>
+      <Name>Project Owner Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="782af3db-f7de-4ae6-a533-d7c296b8d17e">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ed94212e-108b-4950-a393-89f3735c54dd">
+            <TableID>dbo_Dim_Project_SCD</TableID>
+            <ColumnID>ProjectOwnerName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="1fd25298-5cfc-4a32-ac1f-856f7faecd50">
+      <ID>Hierarchy</ID>
+      <Name>Project List</Name>
+      <Levels>
+        <Level dwd:design-time-name="4da3ffef-8d33-4f89-9040-8a7af541bc8c">
+          <ID>Project UID</ID>
+          <Name>Project UID</Name>
+          <SourceAttributeID>Project UID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="fb7c1f33-4eba-4042-9a4d-d1ea144532ba">
+      <ID>Hierarchy 1</ID>
+      <Name>By Chargeback</Name>
+      <Levels>
+        <Level dwd:design-time-name="df1b7f83-398c-4300-b44e-be72e8643106">
+          <ID>Project Chargeback Category</ID>
+          <Name>Project Chargeback Category</Name>
+          <SourceAttributeID>Project Chargeback Category</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="8e2a7450-5e07-4151-b933-3035e1441376">
+          <ID>Project UID</ID>
+          <Name>Project UID</Name>
+          <SourceAttributeID>Project UID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="679fa2e8-dbc8-40d7-8ef3-253d5a7882b8">
+      <ID>Hierarchy 2</ID>
+      <Name>By Owner</Name>
+      <Levels>
+        <Level dwd:design-time-name="6ef29e27-af72-4b85-981f-eedaa58a0f7b">
+          <ID>Project Owner Name</ID>
+          <Name>Project Owner Name</Name>
+          <SourceAttributeID>Project Owner Name</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="072d6d8b-8310-459b-a35e-14fcdee2ad90">
+          <ID>Project UID</ID>
+          <Name>Project UID</Name>
+          <SourceAttributeID>Project UID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
