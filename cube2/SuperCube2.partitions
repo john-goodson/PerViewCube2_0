@@ -1,5 +1,5 @@
 ﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="bea2cb11-397a-413d-abd0-26ebc42ad00c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
-  <ID>Cube1</ID>
+  <ID>SuperCube2</ID>
   <MeasureGroups>
     <MeasureGroup>
       <ID>Fact Timesheet By Day</ID>
@@ -67,9 +67,9 @@
         <Partition dwd:design-time-name="2d6aab44-62fe-45fc-bfbb-2c4699e1cb4e">
           <ID>Fact Issues Summary</ID>
           <Name>Fact Issues Summary</Name>
-          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
           <State>Unprocessed</State>
           <Source xsi:type="DsvTableBinding" dwd:design-time-name="3b43b049-6271-47d2-adb8-7666c59d3c97">
             <DataSourceViewID>Per View Data Mart</DataSourceViewID>
@@ -87,9 +87,9 @@
         <Partition dwd:design-time-name="615cc4c5-f612-41aa-b13d-0895794945d0">
           <ID>Fact Risks Summary</ID>
           <Name>Fact Risks Summary</Name>
-          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
           <State>Unprocessed</State>
           <Source xsi:type="DsvTableBinding" dwd:design-time-name="f0a74d24-5e61-467f-bd42-f82b47480c27">
             <DataSourceViewID>Per View Data Mart</DataSourceViewID>
@@ -107,9 +107,9 @@
         <Partition dwd:design-time-name="0d53b7c9-4ab8-4b71-82c1-af8d6a0723af">
           <ID>Fact Action Items</ID>
           <Name>Fact Action Items</Name>
-          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
           <State>Unprocessed</State>
           <Source xsi:type="DsvTableBinding" dwd:design-time-name="a1191b66-721a-4d48-b64f-0c4c4ec0175b">
             <DataSourceViewID>Per View Data Mart</DataSourceViewID>
@@ -127,13 +127,53 @@
         <Partition dwd:design-time-name="475545b1-a4e9-4a6b-8fc1-db7d81ee3a5e">
           <ID>Fact Decisions</ID>
           <Name>Fact Decisions</Name>
-          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
           <State>Unprocessed</State>
           <Source xsi:type="DsvTableBinding" dwd:design-time-name="79f4dd2c-0add-4f3f-a80a-119e136df9ae">
             <DataSourceViewID>Per View Data Mart</DataSourceViewID>
             <TableID>dbo_fact_Decisions</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Epm Resource Summary</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="fae29a29-4fec-4ad9-9260-4b5c0506f903">
+          <ID>Fact Epm Resource Summary</ID>
+          <Name>Fact Epm Resource Summary</Name>
+          <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9cf2d1e8-1179-4c9e-b8a2-b72c58ba49fa">
+            <DataSourceViewID>Per View Data Mart</DataSourceViewID>
+            <TableID>dbo_Fact_EpmResourceSummary</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Epm Resource By Day</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="c6f37e90-8ec7-432f-851a-9bf74a6ecf2d">
+          <ID>Fact Epm Resource By Day</ID>
+          <Name>Fact Epm Resource By Day</Name>
+          <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a881e3c7-6390-4f0b-bdf8-dd125568164d">
+            <DataSourceViewID>Per View Data Mart</DataSourceViewID>
+            <TableID>dbo_Fact_EpmResourceByDay</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>

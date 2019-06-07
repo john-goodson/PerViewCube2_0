@@ -1,11 +1,37 @@
 ﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7fcd633d-9d5d-4bf8-8474-9f3d3d8be4d9" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Risks</ID>
   <Name>Risks</Name>
-  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2507" scrolltop="-6257" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10186" y="17515" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_risks" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="5133" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c00000d14000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_dim_risks" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
@@ -21,15 +47,15 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>0</Value>
+      <Value>-2507</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>0</Value>
+      <Value>-6257</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-      <Value>0</Value>
+      <Value>20</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
@@ -40,7 +66,7 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="e644e6f1-517e-4c4c-8053-838dfcb0ab20">
     <DataSourceViewID>Per View Data Mart</DataSourceViewID>
@@ -180,14 +206,21 @@
       <ID>Probability</ID>
       <Name>Probability</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="02a79c34-cb5c-4690-a547-44650caf02e0">
-          <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="42d3c916-749d-45fc-9cf9-5120fc3b9aab">
+        <KeyColumn dwd:design-time-name="af4e0a3e-5be1-4786-9f3f-b89a9e6ad808">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="48fe9857-96e8-4ef8-be22-c8545b50f2ca">
             <TableID>dbo_dim_risks</TableID>
-            <ColumnID>Probability</ColumnID>
+            <ColumnID>RiskUniqueID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="3cba02ec-b3b7-459f-8bc1-a856761ef49d">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9adcc8b9-83d9-4c6d-9b2e-56c390c8abd2">
+          <TableID>dbo_dim_risks</TableID>
+          <ColumnID>Probability</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
@@ -212,14 +245,21 @@
       <ID>Exposure</ID>
       <Name>Exposure</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f4881606-80da-461b-8e02-6b37e2d371e8">
-          <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="77168643-3843-4107-ac56-49a1ad41a961">
+        <KeyColumn dwd:design-time-name="1ae9a313-edc9-407c-af41-ceee65228687">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7dbbcb58-b6d4-4e55-86e2-f9a67d2082c8">
             <TableID>dbo_dim_risks</TableID>
-            <ColumnID>Exposure</ColumnID>
+            <ColumnID>RiskUniqueID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="1303a955-a70c-4020-b51e-c903e3d70162">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3f123392-60c1-4cf0-818d-ad60f284002a">
+          <TableID>dbo_dim_risks</TableID>
+          <ColumnID>Exposure</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
@@ -228,14 +268,21 @@
       <ID>Cost</ID>
       <Name>Cost</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5d774bdf-9d79-4c59-9b1f-9c96f48837bf">
-          <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="fcf78e92-ea3f-4ee4-b3d8-faedb8623173">
+        <KeyColumn dwd:design-time-name="7acc4ec1-a754-4e5b-9026-a80f0219fab4">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6297fe42-abd5-4b77-98b2-4a6e3c36b9f4">
             <TableID>dbo_dim_risks</TableID>
-            <ColumnID>Cost</ColumnID>
+            <ColumnID>RiskUniqueID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="e6a24c83-e494-478f-b2d4-75c8723a85cb">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f6fd4a44-4f83-4aee-8179-7d3e820fee91">
+          <TableID>dbo_dim_risks</TableID>
+          <ColumnID>Cost</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
@@ -244,14 +291,21 @@
       <ID>Cost Exposure</ID>
       <Name>Cost Exposure</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5538c5af-97f9-4cea-9c2f-90432f08404d">
-          <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="261ad2fa-8be0-4cb1-9e14-4726bf520fcc">
+        <KeyColumn dwd:design-time-name="92178aff-876a-4834-8721-08552c1f0019">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e31f5ec0-2ef2-4b35-a1f7-18c63413d96f">
             <TableID>dbo_dim_risks</TableID>
-            <ColumnID>CostExposure</ColumnID>
+            <ColumnID>RiskUniqueID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="8aa54c5a-0f6c-4cd0-ad94-226623ad9412">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5ee15614-51dd-4ee3-9a23-dc0a59f64823">
+          <TableID>dbo_dim_risks</TableID>
+          <ColumnID>CostExposure</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
