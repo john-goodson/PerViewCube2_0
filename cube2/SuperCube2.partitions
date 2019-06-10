@@ -181,5 +181,25 @@
         </Partition>
       </Partitions>
     </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Epm Task Summary</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="2f13889b-0b94-422a-98b2-db28b8a0ce76">
+          <ID>Fact Epm Task Summary</ID>
+          <Name>Fact Epm Task Summary</Name>
+          <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="3aa63ed3-71f0-4103-8311-0cf1dc2d8103">
+            <DataSourceViewID>Per View Data Mart</DataSourceViewID>
+            <TableID>dbo_Fact_EpmTaskSummary</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
   </MeasureGroups>
 </Cube>
